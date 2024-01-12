@@ -29,12 +29,12 @@ describe('DOM', () => {
 	});
 
 	it('should have a number type of card image width and height attribute values', () => {
-		const cardImageEl = document.querySelector('.card__image img');
-		const cardImageWidth = cardImageEl.width;
-		const cardImageHeight = cardImageEl.height;
+		const cardImgEl = document.querySelector('.card__image img');
+		const cardImgWidth = cardImgEl.width;
+		const cardImgHeight = cardImgEl.height;
 
-		assert.typeOf(cardImageWidth, 'number');
-		assert.typeOf(cardImageHeight, 'number');
+		assert.typeOf(cardImgWidth, 'number');
+		assert.typeOf(cardImgHeight, 'number');
 	});
 
 	it("should have an author name element that contains 'Michelle Appleton' word", () => {
@@ -46,15 +46,15 @@ describe('DOM', () => {
 
 	it('should have two children inside of the article element', () => {
 		const articleEl = document.querySelector('article');
-		const articleChildrenElements = articleEl.children;
+		const articleChildrenEls = articleEl.children;
 
-		assert.lengthOf(articleChildrenElements, 2);
+		assert.lengthOf(articleChildrenEls, 2);
 	});
 
 	it('should have an empty alt attribute value of card image element', () => {
-		const cardImageEl = document.querySelector('.card__image img');
-		const cardImageAlt = cardImageEl.getAttribute('alt');
+		const cardImgEl = document.querySelector('.card__image img');
+		const cardImgAlt = cardImgEl.getAttribute('alt');
 
-		assert.isEmpty(cardImageAlt);
+		assert.isEmpty(cardImgAlt);
 	});
 });
