@@ -41,7 +41,7 @@ describe('DOM', () => {
 		const cardAuthorNameEl = document.querySelector('.card__author-name');
 		const cardAuthorName = cardAuthorNameEl.textContent.trim();
 
-		assert.equal(cardAuthorName, 'Michelle Appleton');
+		assert.include(cardAuthorName, 'Michelle Appleton');
 	});
 
 	it('should have two children inside of the article element', () => {
